@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "target": "es5",
+    "allowJs": true,
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "baseUrl": "src",
+    "paths": {
+      "~*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "build",
+    ".cache",
+    "dist",
+    "coverage",
+    "scripts",
+    "node_modules",
+    "public",
+    "plugins",
+    "next.config.js",
+    "next-seo.config.js",
+    "**/*.spec.ts",
+    "**/*.spec.tsx"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "30-css-js-variables",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@types/gsap": "^1.20.2",
+    "@types/node": "^12.12.28",
+    "codyhouse-framework": "^2.6.0",
+    "fs-extra": "^8.1.0",
+    "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.4",
+    "ts-lint": "^4.5.1",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "sass": "^1.26.3"
+  },
+  "scripts": {
+    "clean": "node cleanDir",
+    "start": "npm run clean && parcel index.html",
+    "dir": "npm run clean && parcel $*",
+    "dev": "npm run clean && parcel index.html --host 0.0.0.0 --port 8888",
+    "build": "npm run clean && parcel build src/index.html --no-source-maps"
+  },
+  "author": "spencer",
+  "license": "ISC"
+}
